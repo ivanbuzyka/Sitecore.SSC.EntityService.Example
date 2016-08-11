@@ -136,6 +136,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authentication\CustomSecurityPolicyFilter.cs" />
     <Compile Include="Controllers\ExampleServiceController.cs" />
     <Compile Include="Controllers\TestEntityController.cs" />
     <Compile Include="Models\TestEntity.cs" />
@@ -146,9 +147,11 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="App_Config\Include\zzz\zRouteConfiguration.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\Sitecore.Services.Client.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
