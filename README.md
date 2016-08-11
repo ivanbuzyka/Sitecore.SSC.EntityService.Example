@@ -28,3 +28,5 @@ POST http://-host_name-/sitecore/api/ssc/auth/login
 ```
 
 If you are using Postman and Interceptor there, ".ASPXAUTH" cookie will be intercepted and used in the next request, so your request will be authenticated.
+
+**Note:** [Sitecore.Services.Client-boilerplate](https://github.com/Sitecore/Sitecore.Services.Client-boilerplate) was used as an example
