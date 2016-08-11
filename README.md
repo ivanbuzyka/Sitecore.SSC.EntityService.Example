@@ -12,7 +12,7 @@ You can CRUD that entities using appropriate requests.
 
 In order to call GET request following for example in Postman:
 
-http://<host_name>/sitecore/api/exampleservice/110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9 (Guid could be some non-existing one in this example)
+http://<host_name>/sitecore/api/exampleservice/
 
 You will get "401 Unauthorized" at first. You need to login using following standard Sitecore SSC method:
 

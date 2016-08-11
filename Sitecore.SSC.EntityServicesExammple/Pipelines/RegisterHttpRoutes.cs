@@ -15,7 +15,8 @@ namespace Sitecore.SSC.EntityServicesExammple.Pipelines
             routes.MapHttpRoute("ExampleService", "sitecore/api/exampleservice/{id}", new
             {
                 controller = "ExampleService",
-                action = "GenerateEntity"
+                action = "GenerateEntity",
+                id = "11111111-1111-1111-1111-111111111111"
             });
         }
     }
