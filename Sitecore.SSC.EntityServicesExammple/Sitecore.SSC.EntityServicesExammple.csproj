@@ -140,15 +140,13 @@
     <Compile Include="Controllers\ExampleServiceController.cs" />
     <Compile Include="Controllers\TestEntityController.cs" />
     <Compile Include="Models\TestEntity.cs" />
-    <Compile Include="Pipelines\EnableCors.cs" />
     <Compile Include="Pipelines\RegisterHttpRoutes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\TestEntityRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="js\entityServiceExamples.js" />
-    <Content Include="js\itemServiceExamples.js" />
+    <Content Include="js\servicesExamples.js" />
     <None Include="Properties\PublishProfiles\debug.pubxml" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.0.js" />
@@ -168,7 +166,7 @@
     <Content Include="App_Config\Include\zzz\zRouteConfiguration.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Sitecore.Services.Client.config" />
+    <None Include="App_Config\Include\Sitecore.Services.Client.config.updated" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-3.1.0.slim.min.map" />

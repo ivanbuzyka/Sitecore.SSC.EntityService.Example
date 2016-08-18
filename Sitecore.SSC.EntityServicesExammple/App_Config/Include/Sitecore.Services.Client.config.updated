@@ -56,15 +56,13 @@ Please consult your Sitecore partner before making any changes to the settings i
             access the Sitecore Item Web API services
             Default: sitecore\ServicesAPI      
       -->
-      <setting name="Sitecore.Services.AnonymousUser" value="sitecore\admin" />
+      <setting name="Sitecore.Services.AnonymousUser" value="sitecore\ServicesAPI" />
     </settings>
 
     <pipelines>
       <initialize>
         <processor type="Sitecore.Services.Infrastructure.Sitecore.Pipelines.ServicesWebApiInitializer, Sitecore.Services.Infrastructure.Sitecore"
                    patch:after="processor[@type='Sitecore.Mvc.Pipelines.Loader.InitializeRoutes, Sitecore.Mvc']" />
-        <!--<processor type="Sitecore.SSC.EntityServicesExammple.Pipelines.EnableCors, Sitecore.SSC.EntityServicesExammple"
-                   patch:after="processor[@type='Sitecore.Mvc.Pipelines.Loader.InitializeRoutes, Sitecore.Mvc']" />-->
       </initialize>
     </pipelines>
     
@@ -78,8 +76,11 @@ Please consult your Sitecore partner before making any changes to the settings i
             <filter>Sitecore.Services.Infrastructure.Web.Http.Filters.AnonymousUserFilter, Sitecore.Services.Infrastructure</filter>
             <filter>Sitecore.Services.Infrastructure.Web.Http.Filters.SecurityPolicyAuthorisationFilter, Sitecore.Services.Infrastructure</filter>			
             <filter>Sitecre.Services.Infrastructure.Web.Http.Filters.LoggingExceptionFilter, Sitecore.Services.Infrastructure</filter>
+            
+            <!--Custom Securtiy Policy Filter.
+                in order to disallow access to services from custom entity services and ServiceApiController implementations
+            -->
             <filter>Sitecore.SSC.EntityServicesExammple.Authentication.CustomSecurityPolicyFilter, Sitecore.SSC.EntityServicesExammple</filter>
-			<!--<filter>Sitecore.EntityServiceBoilerplate.Pipelines.CustomSecurityPolicyFilter, EntityServiceBoilerplate</filter>-->
             <!-- 
             
             Decomment this section to mandate HTTPS for all Web API requests to the site

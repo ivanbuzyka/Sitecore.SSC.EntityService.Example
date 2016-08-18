@@ -88,7 +88,7 @@ $(document).ready(function () {
 
             //COMMENT: another option to send request using Sitecore Javascript API
             /*var exampleSvc = new EntityService({
-                url: "sitecore/api/ssc/Sitecore-SSC-EntityServicesExammple-Controllers/TestEntity"
+                url: hostName + "/sitecore/api/ssc/Sitecore-SSC-EntityServicesExammple-Controllers/TestEntity"
             });
         
             var fetchQuery = exampleSvc.fetchEntities();
@@ -105,7 +105,7 @@ $(document).ready(function () {
             /*$.ajax(
             {
                 type: "GET",
-                url: hostName + "/sitecore/api/ssc/item/?path=%2Fsitecore%2Fcontent%2Fhome",
+                url: hostName + "/sitecore/api/ssc/item/110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9",
                 contentType: "application/json; charset=utf-8",
                 xhrFields: {
                     withCredentials: true
@@ -117,7 +117,7 @@ $(document).ready(function () {
 
             //COMMENT: another option to send request using Sitecore Javascript API
             var exampleItemSvc = new ItemService({
-                url: "sitecore/api/ssc/item"
+                url: hostName + "/sitecore/api/ssc/item"
             });
         
             var fetchQuery = exampleItemSvc.fetchItem("110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9");

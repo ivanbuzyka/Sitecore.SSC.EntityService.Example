@@ -7,7 +7,6 @@ using Sitecore.SSC.EntityServicesExammple.Repositories;
 
 namespace Sitecore.SSC.EntityServicesExammple.Controllers
 {
-    [EnableCors(origins: "*", headers: "*", methods: "*")]
     [ServicesController]
     public class TestEntityController : EntityService<TestEntity>
     {
